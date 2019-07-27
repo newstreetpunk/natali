@@ -5,7 +5,33 @@
 		font-size: 20px
 	.double-menu__item span
 		padding-left: 10px
+	.content .title-page
+		font-size: 90px
+	.content-left
+		font-size: 18px
+	.double-title-page
+		font-size: 150px
+	.content-block .text-block
+		font-size: 18px
 
+@media screen and (max-width: 992px)
+	.double-title-page
+		display: none
+	.content-left
+		width: 100%
+		margin-right: 0
+	.content-block img
+		margin: 0 60px
+		width: 200px
+	.content .title-page
+		font-size: 80px
+	.btn
+		font-size: 18px
+	.content .title-page
+		text-align: center
+		margin-bottom: 30px
+	.content .title-page:after
+		display: none
 
 
 @media screen and (max-width: 768px)
@@ -37,7 +63,19 @@
 				width: 101%
 			img
 				display: none
-
+	.content-block .container
+		flex-direction: column
+		justify-content: center
+	.content-block .text-block
+		padding-top: 50px
+	.content-block .text-block:before
+		display: none
+	.footer
+		text-align: center
+	.footer a, .mail-wrap
+		display: none
+	.footer .container
+		justify-content: center
 @media screen and (max-width: 580px)
 	.bg-block
 		margin-top: 45px
@@ -68,5 +106,27 @@
 		width: 101%
 	.double-menu-list
 		padding: 0 20px
-
+	.content .title-page
+		font-size: 60px
+		margin-bottom: 12px
+	.content-left,
+	.content-block .text-block
+		font-size: 14px
+	nav>ul>li
+		padding: 5px 0
+		padding-left: 15px
+	nav>ul>li .sub-menu,
+	nav>ul>li:hover .sub-menu
+		margin-top: 0
+	nav>ul>li .sub-menu li
+		padding: 5px 0
+	s:after
+		bottom: -6px
+	.footer
+		font-size: 12px
+	.custom-logo-link
+		width: 260px
+		margin-bottom: 10px
+	.btn
+		display: block
 

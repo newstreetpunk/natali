@@ -9,7 +9,7 @@
 	color: #fff
 
 body
-	font-size: 16px
+	font-size: 22px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
@@ -37,7 +37,7 @@ ul, li
 .container
 	max-width: 1280px
 	width: 100%
-	//padding: 0 20px
+	padding: 0 20px
 	margin: 0 auto
 	position: relative
 .mobile-line
@@ -91,12 +91,13 @@ ul, li
 	top: 0
 	max-width: 370px
 	width: 100%
-	height: 100vh
+	//height: 100vh
 	background-color: #fff
 	z-index: 1000
 	transition: all .25s ease-in-out
 	padding-top: 40px
 	overflow-y: auto
+	padding-bottom: 45px
 	&.active
 		left: 0
 		display: block
@@ -106,6 +107,8 @@ ul, li
 	height: 100vh
 	background-size: cover
 	background-position: center top
+	display: flex
+	align-items: center
 .phone
 	display: flex
 	align-items: center
@@ -162,6 +165,8 @@ nav
 		top: -60vh
 		max-width: 1280px
 		width: 100%
+		left: 50%
+		transform: translateX(-50%)
 	&__row
 		display: flex
 		justify-content: space-between
@@ -207,7 +212,113 @@ nav
 			padding-bottom: 8px
 			box-shadow: 0px -20px 20px 0px rgba(0,0,0,.8)
 			background-color: rgba(0,0,0,.8)
-
+.content
+	display: flex
+	align-items: center
+	&-left
+		width: 70%
+		margin-right: 100px
+	.title-page
+		margin: 0
+		font-family: "SignPainter", sans-serif
+		font-style: italic
+		font-size: 111px
+		position: relative
+		line-height: 1.4
+		margin-bottom: 50px
+		text-align: right
+		&:after
+			content: ''
+			display: block
+			width: 50%
+			height: 1px
+			background-color: #fff
+			position: absolute
+			right: 0
+			bottom: 0
+	.first-word
+		text-transform: uppercase
+.first-word
+	color: $accent
+.double-title-page
+	font-size: 180px
+	line-height: 1
+	font-weight: bold
+	font-family: 'Cinematografica', sans-serif
+	text-shadow: 5px 5px 0 $accent
+	.first-word
+		text-shadow: 5px 5px 0 #fff
+s
+	text-decoration: none
+	position: relative
+	z-index: 1
+	white-space: nowrap
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 14px
+		background-color: $accent
+		position: absolute
+		left: 0
+		bottom: -2px
+		z-index: -1
+.btn
+	background-color: $accent-2
+	font-size: 22px
+	text-transform: uppercase
+	color: #fff
+	padding: 15px 22px
+	box-shadow: 10px 10px 24px rgba($accent-2, .47)
+	transition: all .2s ease
+	font-weight: 400
+	display: inline-block
+	&:hover
+		box-shadow: none
+		color: #fff
+.content-block
+	background-color: #fff
+	color: $text
+	padding: 70px 0
+	img
+		margin: 0 120px
+	.container
+		display: flex
+		align-items: center
+	.text-block
+		padding-top: 100px
+		position: relative
+		&:before
+			content: ''
+			display: block
+			width: 50%
+			height: 1px
+			background-color: $text
+			position: absolute
+			left: 0
+			top: 60px
+		.btn
+			margin-top: 35px
+.footer
+	font-size: 16px
+	padding: 15px 0
+	color: #7d7d7d
+	a
+		color: #7d7d7d
+		text-decoration: underline
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+.mail-wrap
+	display: flex
+	align-items: center
+	a
+		color: #fff
+		text-decoration: none
+	.mail-icon
+		margin-right: 8px
 
 
 
