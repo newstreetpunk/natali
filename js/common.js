@@ -1,8 +1,13 @@
 $(function() {
-
+	var bb = $('.info-block');
 	var main = function() {
 		$('.menu-btn').click(function() {
-			$('.info-block').css('left', '0px');
+			if(bb.css('left') == '0px'){
+				$('.info-block').css('left', '-370px');
+			}else{
+				$('.info-block').css('left', '0px');
+			}
+			
 		});
 	};
 
