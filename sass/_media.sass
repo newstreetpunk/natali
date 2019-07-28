@@ -13,6 +13,8 @@
 		font-size: 150px
 	.content-block .text-block
 		font-size: 18px
+	.content-left:before
+		display: none
 
 @media screen and (max-width: 992px)
 	.double-title-page
@@ -77,8 +79,17 @@
 	.footer .container
 		justify-content: center
 @media screen and (max-width: 580px)
-	.bg-block
+	.mob-bg-block
 		margin-top: 45px
+		display: block
+		height: 280px
+		background-size: cover
+		background-position: center
+	.u-bg-block
+		background-image: none !important
+		min-height: 100px
+		height: auto
+		box-shadow: 0 -20px 75px 30px #000
 	.mobile-line
 		display: block
 		.phone
@@ -129,4 +140,5 @@
 		margin-bottom: 10px
 	.btn
 		display: block
+		text-align: center
 
