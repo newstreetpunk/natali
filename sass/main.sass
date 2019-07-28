@@ -347,6 +347,45 @@ s
 	right: auto
 	left: 50%
 	transform: translateX(-50%)
+.who-me-block
+	img
+		margin: 0
+		max-width: 590px
+		width: 100%
+		margin-left: -160px
+		margin-right: 80px
+	.text-block
+		padding: 0
+		h2
+			font-size: 72px
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 315px
+				height: 1px
+				background-color: $text
+				position: absolute
+				right: -140px
+				bottom: 0
+		&:before
+			display: none
+li
+	position: relative
+	z-index: 1
+	padding: 15px 0
+	.wh
+		color: #fff
+		&:before
+			content: ''
+			display: block
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			background-color: $accent-2
+			position: absolute
+			left: -4px
+			z-index: -1
 
 
 
