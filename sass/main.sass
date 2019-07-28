@@ -414,6 +414,7 @@ li
 	position: relative
 	z-index: 1
 	padding-top: 100px
+	background-image: url(../img/contacts-bg.jpg) !important
 	&:after
 		content: ''
 		display: block
@@ -422,7 +423,7 @@ li
 		position: absolute
 		left: 0 
 		top: 0
-		background-color: rgba(0,0,0,.85)
+		background-color: rgba(0,0,0,.8)
 		z-index: -1
 .contacts-content
 	display: block
@@ -505,6 +506,38 @@ form
 		font-size: 18px
 	label
 		font-size: 14px
+.reviews-slider
+	max-width: 900px
+	width: 100%
+	margin: 0 auto
+	padding-bottom: 100px
+	.reviews-slide
+		background-color: #fff
+		color: $text
+		padding: 60px 40px
+		p
+			margin-bottom: 0
+.slick-arrow 
+	position: absolute
+	bottom: 0
+	right: 0
+.slick-prev,
+.slick-next
+	width: 57px
+	height: 57px
+	border: none
+	background-color: #fff
+	cursor: pointer
+	transition: all .2s ease
+	color: $text
+	font-weight: bold
+	font-size: 35px
+	padding: 0
+	&:hover
+		background-color: $accent
+		color: #fff
+.slick-prev
+	right: 80px
 
 
 
