@@ -25,6 +25,9 @@
 		font-size: 50px
 	li .wh:before
 		left: -10px
+	.my-way-block img
+		margin-right: 0
+		max-width: 40%
 
 @media screen and (max-width: 992px)
 	.double-title-page
@@ -48,6 +51,18 @@
 		width: 320px
 	.who-me-block .text-block h2
 		font-size: 36px
+	.my-way-block .container
+		flex-direction: column-reverse
+	.my-way-block 
+		padding-top: 30px
+		img
+			max-width: 100%
+			width: 100%
+			margin: 0
+		.text-block
+			&:before
+				display: none
+			padding-top: 0
 
 
 @media screen and (max-width: 768px)
@@ -94,6 +109,10 @@
 		justify-content: center
 	.content-block
 		padding: 35px 0
+	.my-way-block .container
+		flex-direction: column-reverse
+	.content.my-way-content .content-left
+		width: 80%
 
 
 @media screen and (max-width: 580px)
@@ -170,4 +189,6 @@
 		text-align: center
 	li .wh:before
 		left: -13px
+	.content.my-way-content .content-left
+		width: 100%
 
