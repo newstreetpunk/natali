@@ -59,6 +59,8 @@ ul, li
 	box-shadow: 0 -70px 140px 150px #000
 	position: relative
 	padding-bottom: 50px
+.accent
+	color: $accent
 
 .header
 
@@ -109,6 +111,10 @@ ul, li
 	background-position: center top
 	display: flex
 	align-items: center
+.u-bg-block
+	min-height: 100vh
+	height: auto
+	padding: 60px 0
 .phone
 	display: flex
 	align-items: center
@@ -261,11 +267,15 @@ nav
 	text-shadow: 5px 5px 0 $accent
 	.first-word
 		text-shadow: 5px 5px 0 #fff
+h2
+	font-family: "SignPainter", sans-serif
+	font-style: italic
+	font-size: 59px
 s
 	text-decoration: none
 	position: relative
 	z-index: 1
-	white-space: nowrap
+	//white-space: nowrap
 	&:after
 		content: ''
 		display: block
@@ -332,6 +342,12 @@ s
 		text-decoration: none
 	.mail-icon
 		margin-right: 8px
+.content .reverse
+	text-align: center
+.content .title-page.reverse:after
+	right: auto
+	left: 50%
+	transform: translateX(-50%)
 
 
 
