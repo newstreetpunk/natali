@@ -30,10 +30,12 @@ a
 	transition: all .1s ease
 	&:hover
 		text-decoration: none
-ul, li
+ul, li, ol
 	list-style: none
 	margin: 0
 	padding: 0
+ol li
+	padding-left: 20px
 .container
 	max-width: 1280px
 	width: 100%
@@ -257,7 +259,7 @@ nav
 	.first-word
 		text-transform: uppercase
 .first-word
-	color: $accent
+	color: $accent-2
 .double-title-page
 	font-size: 180px
 	line-height: 1
@@ -325,6 +327,7 @@ s
 	font-size: 16px
 	padding: 15px 0
 	color: #7d7d7d
+	background-color: #000
 	a
 		color: #7d7d7d
 		text-decoration: underline
@@ -544,6 +547,72 @@ form
 	display: block
 .btn-wrap
 	text-align: center
+.single
+	background-color: #fff
+	min-height: 100vh
+	height: auto
+	color: $text
+	padding: 100px 0 85px
+	s:after
+		background-color: $accent-2
+	h1
+		margin: 0
+		font-family: "SignPainter", sans-serif
+		font-style: italic
+		font-size: 111px
+		position: relative
+		line-height: 1.4
+		margin-bottom: 50px
+		width: auto
+		display: inline-block
+		&:after
+			content: ''
+			display: block
+			width: 50%
+			height: 1px
+			background-color: #000
+			position: absolute
+			right: -30%
+			bottom: 0
+	.footer
+		position: absolute
+		bottom: 0
+		width: 100%
+	.menu-btn span
+		background-color: #000
+blockquote
+	padding: 20px 0 20px 30px
+	margin: 50px 0 50px 100px
+	border-left: 1px solid #aeaeae
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 42px
+		height: 37px
+		background-image: url(../img/icons/two-quotes.png)
+		background-size: contain
+		background-repeat: no-repeat
+		position: absolute
+		left: -65px
+		top: 0
+	p
+		margin-bottom: 0
+ol li
+	padding-left: 40px
+	display: flex
+	align-items: center
+	span
+		position: absolute
+		left: 0
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		background-color: $accent-2
+		color: #fff
+		text-align: center
+		line-height: 36px
+
 
 
 

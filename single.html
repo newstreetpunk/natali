@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="single">
 
 	<header class="header">
 		<div class="mobile-line">
@@ -74,21 +74,34 @@
 
 	</header>
 	
-	<div class="mob-bg-block" style="background-image: url(img/mob-bg/my-work-bg.jpg);"></div>
-	<div class="bg-block u-bg-block contacts-block" style="background-image: url(img/my-work-bg.jpg);">
-		<div class="container">
-			<div class="content content-sert">
-				<div class="content-left">
-					<h1 class="title-page reverse sert">Подарочные <span class="accent">сертификаты</span></h1>
-					<p>Если вы хотите сделать сюрприз близкому человеку или коллегам, <br><s>подарочный сертификат на мои услуги станет отличным решением.</s> Если хотите придумать что-то особенное, за рамками основных проектов, - смело пишите. Обещаю придумать интересное и полезное приключение!</p>
-				</div>
 
-				<div class="btn-wrap">
-					<a href="#" class="btn">Приобрести сертификат</a>
-				</div>
+	<main>
+		<div class="container">
+			<h1>Заголовок статьи</h1>
+
+			<div class="single-content">
+				<p><s>Десять лет практики коучинга</s> (из них более 6 лет топ менеджмента компаний) <s>и 25 000 часов проведенных сессий</s> позволили мне наработать свой опыт и неординарные истории. Умение видеть скрытые таланты человека, позволяло мне переводить его на другую позицию внутри компании так, что он кардинально менялся и находил “свое” место, раскрывающее его таланты, где   он приносил совершенно новые результаты для компании.</p>
+
+				<ul>
+					<li>Вы ищите  ориентиры в жизни</li>
+					<li>Вам нужны крылья и вдохновение</li>
+					<li>Наполниться  радостью  жизни</li>
+					<li>Ощутить вкус любви к жизни</li>
+				</ul>
+
+				<blockquote class="wp-block-quote"><p>Здравствуйте! Меня зовут Наталья Глушакова, я коуч — проводник к настоящей жизни на 100%. Вот уже 16 лет я работаю с состояниями людей и коллективов. Сканирую, изучаю, нахожу сбои, возвращаю баланс, даю точку опоры, чтобы Вы следовали своему направлению в жизни.</p></blockquote>
+
+				<ol>
+					<li>Вы ищите  ориентиры в жизни</li>
+					<li>Вам нужны крылья и вдохновение</li>
+					<li>Наполниться  радостью  жизни</li>
+					<li>Ощутить вкус любви к жизни</li>
+				</ol>
+
 			</div>
+			
 		</div>
-	</div>
+	</main>
 
 
 	<footer class="footer">
@@ -106,6 +119,14 @@
 	</footer>
 
 	<script src="js/scripts.min.js"></script>
+
+	<script>
+		var html = $('h1').html();
+		// doing the transformation (adding the span) with a regular expression
+		html = html.replace(/^([^\s]*)(.*)/, "$1<span class=\"first-word\">$2</span>");
+		// update your text
+		$('h1').html(html);
+	</script>
 
 </body>
 </html>
