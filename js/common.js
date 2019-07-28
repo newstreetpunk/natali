@@ -27,5 +27,9 @@ $(function() {
 		return html.replace(b, '<span class="wh">$&</span>');
 	});
 
+	$('textarea').focus(function(){
+		$(this).text('');
+	});
+
 	
 });
