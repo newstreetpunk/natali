@@ -29,7 +29,7 @@ $(function() {
 
 	$('ol li').append('<span></span>');
 	$('ol li').each(function(i){
-		$(this).children('span').text(+i+ + '1');
+		$(this).children('span').text(+ i + + '1');
 	});
 
 	$('textarea').focus(function(){
